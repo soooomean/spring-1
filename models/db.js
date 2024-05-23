@@ -10,11 +10,7 @@ let test = async() => {
         database: process.env.DB_NAME,
         waitForConnections: true,
         insecureAuth: true,
-    })
-
-    let sql = 'SELECT * FROM subscriber';
-    let [rows, fields] = await db.query(sql);
-    console.log(rows);
+    });
 }
 
 test();
